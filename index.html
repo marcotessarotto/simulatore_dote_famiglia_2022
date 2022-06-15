@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="it"> 
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Simulatore per il calcolo dell'importo dote famiglia</title>        
+        <meta name="description" content="Simulatore per il calcolo dell'importo dote famiglia">
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body> 
+        
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+
+                <form action="#" method="post">
+                    <h1>Simulatore per il calcolo dell'importo dote famiglia</h1>
+
+                    <section id="section_numero_figli_minori">
+                        <label for="numero_figli_minori">quanti figli minori (nati dal 2004 in poi) sono presenti nel tuo nucleo familiare? </label>
+                        <input
+                            id="numero_figli_minori"
+                            name="numero_figli_minori"
+                            type="number" 
+                            required
+                            min="0"
+                            />
+                    </section>
+
+                    <section>
+                        <label for="anni_residenza_fvg">da quanti anni risiedi in Friuli Venezia Giulia?
+                            Per accedere alla misura, devi risiedere da almeno 2 anni.</label>
+                        <input
+                            id="anni_residenza_fvg"
+                            name="anni_residenza_fvg" 
+                            type="number"
+                            required
+                            min="0"
+                            />
+                    </section>
+
+                    <section> 
+                        <div id="wrapper">
+                            <label for="presente_persona_con_disabilità">nel nucleo familiare è presente una persona con disabilità?</label>
+                            <p>
+                                <input 
+                                    type="radio" 
+                                    name="presente_persona_con_disabilità"
+                                    id="presente_persona_con_disabilità"
+                                    value="si"
+                                    >Sì</input>
+                            </p>
+                            <p>
+                                <input 
+                                    type="radio" 
+                                    name="presente_persona_con_disabilità"
+                                    id="presente_persona_con_disabilità" 
+                                    value="no"
+                                    checked>No</input>
+                            </p>
+                        </div>  
+
+                    </section>
+
+                    <section> 
+                        <div id="output_wrapper">
+                            <label for="result">Risultato calcolo importo dote famiglia</label>                    
+                            <output id="result" for="numero_figli_minori anni_residenza_fvg presente_persona_con_disabilità"></output>
+                        </div>                        
+                    </section>
+
+
+                    <button id="calculate-button">Calcola importo dote famiglia</button>
+                </form>               
+
+
+            </div> <!-- #main -->
+
+
+        </div>  
+ 
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>
