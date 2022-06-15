@@ -4,21 +4,27 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Simulatore per il calcolo dell'importo dote famiglia</title>        
+        <title>Simulatore per il calcolo dell'importo Dote famiglia</title>        
         <meta name="description" content="Simulatore per il calcolo dell'importo dote famiglia">
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body> 
-        
+
         <div class="main-container">
             <div class="main wrapper clearfix">
 
 
                 <form action="#" method="post">
-                    <h1>Simulatore per il calcolo dell'importo dote famiglia</h1>
+                    <h1>Simulatore per il calcolo dell'importo Dote famiglia</h1>
+
+                    <section>
+                        <label>ATTENZIONE: per accedere alla misura devi risiedere da almeno 2 anni continuativi in regione Friuli Venezia Giulia.
+                            Per informazioni sulla misura, <a href="https://www.regione.fvg.it/rafvg/cms/RAFVG/famiglia-casa/politiche-famiglia/FOGLIA44/" target="nuovo">vai a questo link</a>.
+                        </label>
+                    </section>
 
                     <section id="section_numero_figli_minori">
-                        <label for="numero_figli_minori">quanti figli minori (nati dal 2004 in poi) sono presenti nel tuo nucleo familiare? </label>
+                        <label for="numero_figli_minori">Quanti figli minori (nati dal 2004 in poi) sono presenti nel tuo nucleo familiare? </label>
                         <input
                             id="numero_figli_minori"
                             name="numero_figli_minori"
@@ -29,8 +35,8 @@
                     </section>
 
                     <section>
-                        <label for="anni_residenza_fvg">da quanti anni risiedi in Friuli Venezia Giulia?
-                            Per accedere alla misura, devi risiedere da almeno 2 anni.</label>
+                        <label for="anni_residenza_fvg">Da quanti anni risiedi in Friuli Venezia Giulia in modo continuativo?
+                            Per accedere alla misura devi risiedere da almeno 2 anni.</label>
                         <input
                             id="anni_residenza_fvg"
                             name="anni_residenza_fvg" 
@@ -42,7 +48,7 @@
 
                     <section> 
                         <div id="wrapper">
-                            <label for="presente_persona_con_disabilità">nel nucleo familiare è presente una persona con disabilità?</label>
+                            <label for="presente_persona_con_disabilità">Nel nucleo familiare è presente una persona con disabilità?</label>
                             <p>
                                 <input 
                                     type="radio" 
@@ -71,7 +77,7 @@
                     </section>
 
 
-                    <button id="calculate-button">Calcola importo dote famiglia</button>
+                    <button id="calculate-button">Calcola importo Dote famiglia</button>
                 </form>               
 
 
@@ -79,7 +85,7 @@
 
 
         </div>  
- 
+
         <script src="js/main.js"></script>
 
 
