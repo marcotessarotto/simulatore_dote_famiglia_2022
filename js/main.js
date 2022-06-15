@@ -30,19 +30,6 @@ function resetCustomValidity() {
     presente_persona_con_disabilita.setCustomValidity('');
 }
 
-// A production site would use more stringent password testing. 
-function validatePassword() {
-    let message = '';
-    if (!/.{8,}/.test(passwordInput.value)) {
-        message = 'At least eight characters. ';
-    }
-    // Don't allow a compromised password: check using a service/API such as haveibeenpwned.com
-    // if (isCompromisedPassword()) {
-    // 	message += 'This password has been compromised. Please try again. ';
-    // }
-    passwordInput.setCustomValidity(message);
-}
-
 
 let totale = 0;
 
@@ -68,7 +55,6 @@ function validateInputs() {
         errors = true;        
     }
 
-    //anni_residenza_fvg.setCustomValidity(message);
     if (!errors) {
         totale = 0;
         
