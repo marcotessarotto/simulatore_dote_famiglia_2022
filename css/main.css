@@ -13,6 +13,11 @@ body {
   margin: 20px 15px 0 15px;
 }
 
+#javascript_disabled {
+    color: red;
+    font-size: 24px; 
+}
+
 button#calculate-button {
   background-color: black;
   border: 1px solid #ccc;
